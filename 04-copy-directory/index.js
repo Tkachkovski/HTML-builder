@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const {mkdir} = require('fs/promises');
 
-(async function () {
+(async function copyDir () {
     try{
         await mkdir(path.join(__dirname, 'files-copy'), {recursive:true} , err => {
             if (err) throw err;
